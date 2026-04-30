@@ -46,14 +46,18 @@
   height: 260px;
   width: 150px;
   margin: 0 auto;
-  background: radial-gradient(white , rgb(39, 255, 115));
+  background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
   border-radius: 10px;
-}
-
-.palavras{
-  color:rgb(27, 184, 27);
+  box-shadow: 5px 5px 5px #063f01;
 }
 
 .tipo-pokemon1{
-  color: #63de38;
+  color: #248600;
+  text-shadow: 1px 1px 1px #000000;
 }
+
+.palavras{
+  text-shadow: 1px 1px 1px #000000;
+  color:rgb(0, 95, 0);
+}
+
