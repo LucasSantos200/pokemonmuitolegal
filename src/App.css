@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.pokemon-card{
+  padding: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  box-align: center;
+  padding: 10px;
+  height: 260px;
+  width: 150px;
+  margin: 0 auto;
+  background: radial-gradient(white , rgb(39, 255, 115));
+  border-radius: 10px;
+}
+
+.palavras{
+  color:rgb(27, 184, 27);
+}
+
+.tipo-pokemon1{
+  color: #63de38;
+}
