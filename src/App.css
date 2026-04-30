@@ -37,14 +37,20 @@
   }
 }
 
+.sprite{
+  flex: absolute;
+  position: center;
+  height: auto;
+  width: 100px;
+} 
+
 .pokemon-card{
-  padding: 100%;
   text-transform: capitalize;
-  text-align: center;
+ text-align: center;
   box-align: center;
-  padding: 10px;
-  height: 260px;
-  width: 150px;
+  padding: 5%;
+  height:380px;
+  width:240px;
   margin: 0 auto;
   background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
   border-radius: 10px;
@@ -55,9 +61,14 @@
   color: #248600;
   text-shadow: 1px 1px 1px #000000;
 }
+.nome-pkm{
+
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  color:rgb(5, 255, 5);
+}
 
 .palavras{
   text-shadow: 1px 1px 1px #000000;
-  color:rgb(0, 95, 0);
+  color:rgb(0, 179, 0);
 }
-

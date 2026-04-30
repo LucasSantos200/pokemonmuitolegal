@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from  'axios';
 import './App.css';
+import pokemon from './images/Bulbasauro_irado.png';
+
+
 
 function App() {
 
@@ -31,11 +34,11 @@ function App() {
 
 
   if (loading) return <div className='loader'>
-    Carregando Vagabundex
+    Carregando Pokémon
     </div>;
  
  if (error) return <div className='error'>
-  ocorreu um erro inesperado
+    Rolou um erro aqui, calma
   </div>
 
   return (
@@ -43,15 +46,15 @@ function App() {
       <h1>Cartinha do Pokémon </h1>
     <div className='pokemon-container'>
         <div className='pokemon-card'>
-            <h3 className='palavras'>{pokemons.name}</h3>
-            <img src={pokemons.sprites.front_shiny} alt={pokemons.name} />
-            <h2 className='tipo-pokemon1'>{pokemons.types[0].type.name}</h2>
+            <h3 className='nome-pkm'>{pokemons.name}</h3>
+             <h2 className='tipo-pokemon1'>{pokemons.types[0].type.name}</h2>
+            <img className='sprite' src={pokemon} alt={pokemons.name} />
             
             <h3 className='palavras'>{
             pokemons.stats[0].stat.name + ' ' + 
-            pokemons.stats[0].base_stat + ' ' +  pokemons.stats[1].stat.name + ' ' +
-              pokemons.stats[0].base_stat
-              }</h3>
+            pokemons.stats[0].base_stat + ' ' }</h3> 
+            <h3 className='palavras'>{pokemons.stats[1].stat.name + ' ' +
+            pokemons.stats[0].base_stat}</h3>
         </div>
     </div>   
     </div>
