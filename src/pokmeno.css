@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sprite{
+  flex: absolute;
+  position: center;
+  height: auto;
+  width: 100px;
+} 
+
+.pokemon-card{
+  text-transform: capitalize;
+  text-align: center;
+  box-align: center;
+  padding: 1%;
+  height:380px;
+  width:240px;
+  margin: 0 auto;
+  background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #063f01;
+}
+
+.tipo-pokemon1{
+  color: #248600;
+  text-shadow: 1px 1px 1px #000000;
+}
+.nome-pkm{
+
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  color:rgb(5, 255, 5);
+}
+
+.palavras{
+  text-shadow: 1px 1px 1px #000000;
+  color:rgb(0, 179, 0);
+}
