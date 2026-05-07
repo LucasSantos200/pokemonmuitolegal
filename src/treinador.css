@@ -1,5 +1,36 @@
 body{
   text-align: center;
   margin: 0 auto;
-  background-image: url();
+  background-image: url("https://cinepop.com.br/wp-content/uploads/2026/02/Email_MKT_Foto_2.jpg");
+  background-size: cover ; 
+  background-repeat: no-repeat; 
+  background-position: center ;
+  background-attachment: fixed;
+}
+.treinador{
+  text-align: center;
+  box-align: center;
+  padding: auto;
+  height:auto;
+  width:270px;
+  margin: 0 auto;
+  background: radial-gradient(rgb(163, 163, 163) , rgb(67, 67, 67));
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #000000;
+}
+
+.pokebolas{
+  background-image: url("images/pokebola.png");
+  width: 74px;
+  height: 74px;
+  background-size: cover ;
+  background-position: center;
+  background-color: transparent;
+  border: transparent;  
+  cursor: pointer;
+}
+
+.pokebolas:hover{
+  transition: transform 0.3s ease;
+  transform: translateY(-10px);
 }
