@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Pokemononon from "./pokemononon.js";
+import pokemon from "./pokemon.js";
 import './treinador.css';
 
 function Treinador(){
     return(
-        <div className="treinador">
+        <div className="Treinador">
               <h1>Treinador</h1>
               <h2> Avatar</h2>
             <img className='perfil' src="https://static.wikia.nocookie.net/plantas-vs-zumbis-brasil/images/c/cc/Zumbi_Amarrado.png/revision/latest?cb=20220224111357&path-prefix=pt-br" alt="foto linda"/>
@@ -19,7 +19,7 @@ function Treinador(){
                         <button className="pokebolas"/>                                 
                         <button className="pokebolas"/>                                 
                 </div>
-    )
+    );
 }
 
 export default Treinador;

@@ -7,7 +7,7 @@ body{
   background-position: center ;
   background-attachment: fixed;
 }
-.treinador{
+.Treinador{
   text-align: center;
   box-align: center;
   padding: auto;
@@ -33,4 +33,5 @@ body{
 .pokebolas:hover{
   transition: transform 0.3s ease;
   transform: translateY(-10px);
+  background-image: url("https://cinepop.com.br/wp-content/uploads/2026/02/Email_MKT_Foto_2.jpg");
 }

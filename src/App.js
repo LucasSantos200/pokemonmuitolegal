@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Pokemononon from "./pokemononon.js";
+import Pokemon from "./pokemon.js";
 import Treinador from "./treinador.js"
 import './App.css';
 
@@ -8,11 +8,11 @@ function App(){
     return( 
  <BrowserRouter>
             <Routes>
-                <Route path="/treinador" element={<Pokemononon/>}/>
-                <Route path="/" element={<Treinador/>}/>
+                <Route path="/" exact element={<Treinador/>}/>
+                <Route path="/pokemon"  element={<Pokemon/>}/>
             </Routes>
         </BrowserRouter>
-    )
+    );
 }
 
 export default App;
