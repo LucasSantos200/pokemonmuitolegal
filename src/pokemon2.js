@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './pokemon2.css';
-import pokemonimg from './images/Bulbasauro_irado.png';
+
 
 function PokemonApp2() {
   const [pokemons, setPokemons] = useState({}); 
