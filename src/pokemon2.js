@@ -1,10 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './pokemon1.css';
+import './pokemon2.css';
 import pokemonimg from './images/Bulbasauro_irado.png';
 
-function PokemonApp() {
+function PokemonApp2() {
   const [pokemons, setPokemons] = useState({}); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -12,7 +11,7 @@ function PokemonApp() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get('https://pokeapi.co/api/v2/pokemon/bulbasaur');
+        const res = await axios.get('https://pokeapi.co/api/v2/pokemon/magikarp');
         setPokemons(res.data);
         setLoading(false);
       } catch (err) {
@@ -30,16 +29,16 @@ function PokemonApp() {
   return (
     <div className="App">
       <h1>Cartinha do Pokémon</h1>
-      <div className='pokemon-container'>
-        <div className='pokemon-card'>
-          <h3 className='nome-pkm'>{pokemons.name}</h3>
-          <h2 className='tipo-pokemon1'>{pokemons.types[0].type.name}</h2>
-          <img className='sprite' src={pokemonimg} alt={pokemons.name} />
+      <div className='pokemon-container2'>
+        <div className='pokemon-card2'>
+          <h3 className='nome-pkm2'>{pokemons.name}</h3>
+          <h2 className='tipo-pokemon2'>{pokemons.types[0].type.name}</h2>
+          <img className='sprite2' src={pokemons.sprites.front_default} alt={pokemons.name} />
           
-          <h3 className='palavras'>
+          <h3 className='palavras2'>
             {pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}
           </h3>
-          <h3 className='palavras'>
+          <h3 className='palavras2'>
             {pokemons.stats[1].stat.name}: {pokemons.stats[1].base_stat}
           </h3>
         </div>
@@ -48,4 +47,4 @@ function PokemonApp() {
   );
 }
 
-export default PokemonApp;
+export default PokemonApp2;
