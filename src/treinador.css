@@ -33,5 +33,4 @@ body{
 .pokebolas:hover{
   transition: transform 0.3s ease;
   transform: translateY(-10px);
-  background-image: url("https://cinepop.com.br/wp-content/uploads/2026/02/Email_MKT_Foto_2.jpg");
 }

@@ -1,18 +1,17 @@
 import React from "react";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Pokemon from "./pokemon.js";
-import Treinador from "./treinador.js"
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Treinador from "./treinador";
+import PokemonApp from "./pokemon";
 
-function App(){
-    return( 
- <BrowserRouter>
-            <Routes>
-                <Route path="/" exact element={<Treinador/>}/>
-                <Route path="/pokemon"  element={<Pokemon/>}/>
-            </Routes>
-        </BrowserRouter>
-    );
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Treinador/>} />
+        <Route path="/pokemon" element={<PokemonApp/>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

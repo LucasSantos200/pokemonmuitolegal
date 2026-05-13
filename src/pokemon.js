@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './pokemon.css';
 import pokemonimg from './images/Bulbasauro_irado.png';
 
-function Pokemon() {
-  const [pokemons, setPokemons] = useState(null); // Começa como null para facilitar o check de loading
+function PokemonApp() {
+  const [pokemons, setPokemons] = useState({}); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -21,7 +22,7 @@ function Pokemon() {
       }
     };
     getData();
-  }, []); // CORRIGIDO: Array vazio aqui
+  }, []); 
 
   if (loading) return <div className='loader'>Carregando Pokémon...</div>;
   if (error || !pokemons) return <div className='error'>Rolou um erro aqui, calma.</div>;
@@ -32,7 +33,7 @@ function Pokemon() {
       <div className='pokemon-container'>
         <div className='pokemon-card'>
           <h3 className='nome-pkm'>{pokemons.name}</h3>
-          <h2 className='tipo-pokemon1'>{pokemons.types[0]?.type.name}</h2>
+          <h2 className='tipo-pokemon1'>{pokemons.types[0].type.name}</h2>
           <img className='sprite' src={pokemonimg} alt={pokemons.name} />
           
           <h3 className='palavras'>
@@ -47,4 +48,4 @@ function Pokemon() {
   );
 }
 
-export default Pokemon;
+export default PokemonApp;
