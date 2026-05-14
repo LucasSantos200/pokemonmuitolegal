@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter, Routes, Link } from "react-router-dom";
-import pokemon from "./pokemon.js";
+import pokemon from "../pokemon1/pokemon";
 import './treinador.css';
+import Botaolegal from "../../components/botaobacana";
+
 
 function Treinador(){
     return(
@@ -15,9 +17,13 @@ function Treinador(){
                 <h3>2 por enquanto que eu não ganhei o outro ainda</h3>
                 <h3>0 bagdges</h3>
               
-                       <Link to="/pokemon"><button className="pokebolas"/></Link>                             
-                       <Link to="/pokemon2"><button className="pokebolas"/></Link>                                 
-                        <button className="pokebolas"/>                                 
+                       <Link to="/pokemon"><Botaolegal></Botaolegal></Link>                             
+                       <Link to="/pokemon2"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemon3"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemon4"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemon5"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemon6"><Botaolegal></Botaolegal></Link>                                
+                                                         
                 </div>
     );
 }

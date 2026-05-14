@@ -20,7 +20,7 @@ body{
 }
 
 .pokebolas{
-  background-image: url("images/pokebola.png");
+  background-image: url("../../assets/pokebola.png");
   width: 74px;
   height: 74px;
   background-size: cover ;
