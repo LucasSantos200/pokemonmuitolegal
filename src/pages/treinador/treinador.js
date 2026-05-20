@@ -16,13 +16,13 @@ function Treinador(){
                 <h3>Pseyas</h3>
                 <h3>2 por enquanto que eu não ganhei o outro ainda</h3>
                 <h3>0 bagdges</h3>
-              
-                       <Link to="/pokemon"><Botaolegal></Botaolegal></Link>                             
-                       <Link to="/pokemon2"><Botaolegal></Botaolegal></Link>
+               
+                       <Link to="/pokemon/bulbasaur"><Botaolegal></Botaolegal></Link>                             
+                       <Link to="/pokemon/magikarp"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon3"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon4"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon5"><Botaolegal></Botaolegal></Link>
-                       <Link to="/pokemon6"><Botaolegal></Botaolegal></Link>                                
+                       <Link to="/pokemon6"><Botaolegal></Botaolegal></Link> 
                                                          
                 </div>
     );

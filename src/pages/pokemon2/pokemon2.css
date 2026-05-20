@@ -8,7 +8,7 @@
   width: 100px;
 } 
 
-.pokemon-card2{
+.pkm-pokemon-card2{
   text-transform: capitalize;
   text-align: center;
   box-align: center;
@@ -16,7 +16,7 @@
   height:380px;
   width:240px;
   margin: 0 auto;
-  background: radial-gradient(#00b0cf, rgb(29, 146, 255));
+  background: radial-gradient(#00b0cf, rgb(55, 84, 110));
   border-radius: 10px;
   box-shadow: 5px 5px 5px #013b3f;
 }

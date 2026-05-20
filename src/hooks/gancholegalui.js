@@ -6,11 +6,14 @@ import axios from 'axios';
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
+
+  //estrutura Try-Catch, bota um erro automático 
   useEffect(() => {
     const getData = async () => {
       try {
         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${poke}`);
         setPokemons(res.data);
+        console.log("Sucesso:", res)
         setLoading(false);
       } catch (err) {
         console.error("Erro ao carregar API", err);
@@ -18,8 +21,8 @@ import axios from 'axios';
         setError(true);
       }
     };
-    getData();
- }, [pokemons]); 
+    if(poke) getData();
+ }, [poke]); 
 
     return{pokemons, loading, error}
 
