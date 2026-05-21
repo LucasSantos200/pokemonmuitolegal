@@ -27,7 +27,7 @@
 } 
 
 
-/*pokemon mato verde droga*/
+/*Aba para customização de cartas de grama*/
 
 .pokemon-carta.grass{
   background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
@@ -51,7 +51,7 @@
 }
  
 
-/*parte de pokemons aga*/
+/*Aba para customização de cartas de água 💧*/
 .pokemon-carta.water{
   background: radial-gradient(#00b0cf, rgb(55, 84, 110));
 
@@ -74,7 +74,7 @@
   color:rgb(78, 190, 255);
 }
 
-/*fogo muito fogo fire 🔥*/
+/*Aba para customização de cartas de fogo 🔥*/
 .pokemon-carta.fire{
   background: radial-gradient(#ffbe25, rgb(206, 141, 62));
   box-shadow: 5px 5px 5px #013b3f;

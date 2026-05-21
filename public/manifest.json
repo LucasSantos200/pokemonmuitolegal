@@ -1,9 +1,9 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Aplicativo Bacana UwU",
   "icons": [
     {
-      "src": "GobblesPlush4.ico",
+      "src": "pokebola.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -23,5 +23,3 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
-
- import * as serviceWorkerRegistration from './serviceWorkerRegistration'; 
