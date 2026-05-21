@@ -1,3 +1,18 @@
+.pokemon-carta{
+  background:white;
+  border: 2px solid transparent;
+  text-transform: capitalize;
+  border-radius: 10px;
+  text-align: center;
+  box-align: center;
+  padding: 1%;
+  height:380px;
+  width:240px;
+  margin: 0 auto;
+  width: 240px;
+  height: auto;
+}
+
 .App{
   color: #ffffff;
   text-shadow: #000000 2px 2px 2px;
@@ -8,24 +23,14 @@
   flex: absolute;
   position: center;
   height: auto;
-  width: 100px;
+  width: 130px;
 } 
 
-.pokemon-card{
-  text-transform: capitalize;
-  text-align: center;
-  box-align: center;
-  padding: 1%;
-  height:380px;
-  width:240px;
-  margin: 0 auto;
-}
 
-pokemon mato verde droga
+/*pokemon mato verde droga*/
 
-.pokemon-card.grass{
+.pokemon-carta.grass{
   background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
-  border-radius: 10px;
   box-shadow: 5px 5px 5px #063f01;
 }
 
@@ -46,13 +51,12 @@ pokemon mato verde droga
 }
  
 
-parte de pokemons aga
+/*parte de pokemons aga*/
+.pokemon-carta.water{
+  background: radial-gradient(#00b0cf, rgb(55, 84, 110));
 
-.pokemon-card.water{
-    background: radial-gradient(#00b0cf, rgb(55, 84, 110));
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #013b3f;
-  }
+  box-shadow: 5px 5px 5px #013b3f;
+}
 
   .tipo-pokemon1.water{
   color: #55e5ff;
@@ -68,4 +72,26 @@ parte de pokemons aga
 .palavras.water{
   text-shadow: 1px 1px 1px #000000;
   color:rgb(78, 190, 255);
+}
+
+/*fogo muito fogo fire 🔥*/
+.pokemon-carta.fire{
+  background: radial-gradient(#ffbe25, rgb(206, 141, 62));
+  box-shadow: 5px 5px 5px #013b3f;
+}
+
+  .tipo-pokemon1.fire{
+  color: #ffb055;
+  text-shadow: 1px 1px 1px #000000;
+}
+.nome-pkm.fire{
+
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  color:rgb(255, 110, 27);
+}
+
+.palavras.fire{
+  text-shadow: 1px 1px 1px #000000;
+  color:rgb(214, 104, 30);
 }
