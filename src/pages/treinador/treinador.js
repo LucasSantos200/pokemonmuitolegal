@@ -18,7 +18,7 @@ function Treinador(){
                 <h3>Lucas Leandro dos Santos</h3>
                 <h3>16 naos</h3>
                 <h3>Pseyas</h3>
-                <h3>2 por enquanto que eu não ganhei o outro ainda</h3>
+                <h3>4 so falta 2 pro cara ser o big pokemon</h3>
                 <h3>0 bagdges</h3>
                
                        <Link to="/pokemon/bulbasaur"><Botaolegal></Botaolegal></Link>                             

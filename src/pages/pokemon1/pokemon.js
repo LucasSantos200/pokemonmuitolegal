@@ -5,6 +5,9 @@ import './pokemon1.css';
 import Gancholegalui from '../../hooks/gancholegalui';
 import { useParams } from "react-router-dom";
 
+
+import placeholder1 from "../../assets/placeholder.png"
+import placeholder2 from "../../assets/trollface.jpg"
 //aqui eu to usando o .json e o "Gancholegalui" pra pegar as info 
 //dos pokemon e transformar em texto no HTML
 
@@ -27,7 +30,7 @@ function PokemonApp() {
         <div className={`pokemon-carta ${pokemons.types[0].type.name}`}>
           <h3 className={`nome-pkm ${pokemons.types[0].type.name}`}>{pokemons.name}</h3>
           <h2 className={`tipo-pokemon1 ${pokemons.types[0].type.name}`}>{pokemons.types[0].type.name}</h2>
-          <img className='sprite' src={pokemons.sprites.front_default} alt={pokemons.name} />
+          <img className='sprite' src={pokemons.sprites.other['official-artwork'].front_default} alt={pokemons.name} />
           <h3 className={`palavras ${pokemons.types[0].type.name}`}>
             {pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}
           </h3>
