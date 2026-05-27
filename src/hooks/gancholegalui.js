@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
+
+//"poke" chama o pokemon do App e bota na pokeapi
   function Gancholegalui(poke) {
   const [pokemons, setPokemons] = useState({}); 
   const [loading, setLoading] = useState(true);
@@ -8,7 +11,7 @@ import axios from 'axios';
 
 
   //estrutura Try-Catch, bota um erro automático 
-  useEffect(() => {
+  useEffect(() => { //useEffect busca o pokemon da api, usando o pokemon da url
     const getData = async () => {
       try {
         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${poke}`);

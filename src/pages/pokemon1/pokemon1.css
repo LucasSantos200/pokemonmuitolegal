@@ -77,7 +77,7 @@
 /*Aba para customização de cartas de fogo 🔥*/
 .pokemon-carta.fire{
   background: radial-gradient(#ffbe25, rgb(206, 141, 62));
-  box-shadow: 5px 5px 5px #013b3f;
+  box-shadow: 5px 5px 5px #3f2b01;
 }
 
   .tipo-pokemon1.fire{
@@ -94,4 +94,27 @@
 .palavras.fire{
   text-shadow: 1px 1px 1px #000000;
   color:rgb(214, 104, 30);
+}
+
+/*Aba para customização de cartas de normal*/
+
+.pokemon-carta.normal{
+  background: radial-gradient(#686868, rgb(54, 54, 54));
+  box-shadow: 5px 5px 5px #1a1a1a;
+}
+
+  .tipo-pokemon1.normal{
+  color: #c4c4c4;
+  text-shadow: 1px 1px 1px #000000;
+}
+.nome-pkm.normal{
+
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  color:#e0e0e0;
+}
+
+.palavras.normal{
+  text-shadow: 1px 1px 1px #000000;
+  color:#cfcfcf;
 }

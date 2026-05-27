@@ -5,6 +5,10 @@ import './treinador.css';
 import Botaolegal from "../../components/botaobacana";
 import pfp from "../../assets/molierlindaaiaiaiaiaiamburgao.png"
 
+
+//essa pagina é a inicial, basicamente é só uma tela pra depois ir pros pokemon
+//no Link, eu usei o Botaolegal(hook) pra levar as outras paginas
+
 function Treinador(){
     return(
         <div className="Treinador">
@@ -20,9 +24,9 @@ function Treinador(){
                        <Link to="/pokemon/bulbasaur"><Botaolegal></Botaolegal></Link>                             
                        <Link to="/pokemon/magikarp"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/ponyta"><Botaolegal></Botaolegal></Link>
-                       <Link to="/pokemon/pikachu"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemon/tauros"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/"><Botaolegal></Botaolegal></Link>
-                       <Link to="/pokemon6"><Botaolegal></Botaolegal></Link> 
+                       <Link to="/pokemon/6"><Botaolegal></Botaolegal></Link> 
                                                          
                 </div>
     );

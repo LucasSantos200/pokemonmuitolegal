@@ -5,6 +5,14 @@ import './pokemon1.css';
 import Gancholegalui from '../../hooks/gancholegalui';
 import { useParams } from "react-router-dom";
 
+//aqui eu to usando o .json e o "Gancholegalui" pra pegar as info 
+//dos pokemon e transformar em texto no HTML
+
+
+
+
+
+
 function PokemonApp() {
   const {id} = useParams(); 
 
@@ -15,7 +23,7 @@ function PokemonApp() {
   return (
     <div className="App">
       <h1>Cartinha do Pokémon</h1>
-      <div className='pokemon-container '>
+      <div className='pokemon-container '> 
         <div className={`pokemon-carta ${pokemons.types[0].type.name}`}>
           <h3 className={`nome-pkm ${pokemons.types[0].type.name}`}>{pokemons.name}</h3>
           <h2 className={`tipo-pokemon1 ${pokemons.types[0].type.name}`}>{pokemons.types[0].type.name}</h2>
