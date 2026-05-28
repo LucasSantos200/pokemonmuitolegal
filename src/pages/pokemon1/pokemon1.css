@@ -1,3 +1,13 @@
+
+body {
+  background-image: url('../../assets/cafeinsanoui.gif');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pokemon-carta{
   background:white;
   border: 2px solid transparent;
@@ -27,7 +37,7 @@
 } 
 
 
-/*Aba para customização de cartas de grama*/
+/*Aba para customização de cartas de grama🍃*/
 
 .pokemon-carta.grass{
   background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
@@ -75,7 +85,7 @@
 }
 
 /*Aba para customização de cartas de fogo 🔥*/
-.pokemon-carta.fire{
+  .pokemon-carta.fire{
   background: radial-gradient(#ffbe25, rgb(206, 141, 62));
   box-shadow: 5px 5px 5px #3f2b01;
 }
@@ -97,7 +107,7 @@
 
 }
 
-/*Aba para customização de cartas de normal*/
+/*Aba para customização de cartas de normal 🥊*/
 
 .pokemon-carta.normal{
   background: radial-gradient(#686868, rgb(54, 54, 54));

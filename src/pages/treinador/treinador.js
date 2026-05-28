@@ -3,6 +3,7 @@ import { Route, BrowserRouter, Routes, Link } from "react-router-dom";
 import pokemon from "../pokemon1/pokemon";
 import './treinador.css';
 import Botaolegal from "../../components/botaobacana";
+import Botaodois from "../../components/botaodois";
 import pfp from "../../assets/molierlindaaiaiaiaiaiamburgao.png"
 
 
@@ -25,10 +26,12 @@ function Treinador(){
                        <Link to="/pokemon/magikarp"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/ponyta"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/tauros"><Botaolegal></Botaolegal></Link>
-                       <Link to="/pokemon/"><Botaolegal></Botaolegal></Link>
-                       <Link to="/pokemon/6"><Botaolegal></Botaolegal></Link> 
+                       <Link to="/pokemonfight"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemonfight"><Botaolegal></Botaolegal></Link> 
+                       <Link to="/pokemonfight"><Botaodois/></Link>
                                                          
                 </div>
+                
     );
 }
 

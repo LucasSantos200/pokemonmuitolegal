@@ -1,19 +1,19 @@
 body{
   text-align: center;
   margin: 0 auto;
-  background-image: url("https://preview.redd.it/tenkaichi-street-kamurocho-v0-gqm9vr8ldnse1.jpeg?width=640&crop=smart&auto=webp&s=2af4b8ea1abd26714643e8f3d25e29fd39075d79");
+  background-image: url("../../assets/cafeinsanoui.gif");
   background-size: cover ; 
   background-repeat: no-repeat; 
   background-position: center ;
   background-attachment: fixed;
 }
+
 .Treinador{
   text-align: center;
   box-align: center;
   padding: auto;
   height:auto;
   width:270px;
-  margin: 0 auto;
   background: radial-gradient(rgb(163, 163, 163) , rgb(67, 67, 67));
   border-radius: 10px;
   box-shadow: 0px 10px 10px #000000;
@@ -21,8 +21,8 @@ body{
 
 .pokebolas{
   background-image: url("../../assets/pokebola.png");
-  width: 74px;
-  height: 74px;
+  width: 89px;
+  height: 89px;
   background-size: cover ;
   background-position: center;
   background-color: transparent;
@@ -32,5 +32,25 @@ body{
 
 .pokebolas:hover{
   transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+
+.irparaoutrocoiso{
+
+  width: 200px;
+  height: 70x;
+  background-size: cover ;
+  background-position: center;
+  background-color: transparent;
+  border: transparent;  
+  cursor: pointer;
+  background: linear-gradient( rgb(255, 0, 0) , rgb(0, 0, 0),  rgb(255, 255, 255) );
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #000000;
+  color: #ffffff;
+}
+.irparaoutrocoiso:hover{
+    transition: transform 0.3s ease;
   transform: translateY(-10px);
 }
