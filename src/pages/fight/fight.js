@@ -6,10 +6,10 @@ import placeholder2 from '../../assets/trollface.jpg'
 
 function Fight(){
     return(
-        <div className="placeholder">
+        <div className="fight">
 
-            <h1>ESTA PAGINA É UM PLACEHOLDER E VAI SER MUDADO INSTANTANEAMENTE QUANDO O PROFESSOR CONTINUAR</h1>
-            <img src={placeholder2}/>
+        
+        
         </div>
     );};
 export default Fight;
