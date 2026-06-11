@@ -4,7 +4,7 @@ import axios from 'axios';
 import './pokemon1.css';
 import Gancholegalui from '../../hooks/gancholegalui';
 import { useParams } from "react-router-dom";
-
+import myPokeTipo from '../../hooks/gancholegalui';
 
 import placeholder1 from "../../assets/placeholder.png"
 import placeholder2 from "../../assets/trollface.jpg"
@@ -19,25 +19,28 @@ import placeholder2 from "../../assets/trollface.jpg"
 function PokemonApp() {
   const {id} = useParams(); 
 
-  const {pokemons, loading, error} = Gancholegalui(id); 
+  const {myPokemon, loading, error} = Gancholegalui(id); 
   
   if (loading) return <div className='loader'> <img src={placeholder2}/>Carregando Pokémon...</div>;
-  if (error || !pokemons) return <div className='error'>Rolou um erro aqui, calma.</div>;
-  const shinies = ['ponyta']; //nessa parte eu transformei só a ponyta em 
+  if (error || !myPokemon) return <div className='error'>Rolou um erro aqui, calma.</div>;
+  const shinies = ['ponyta']; //nessa parte eu transformei só a ponyta em shiny
+
+
+  
 
   return (
-    <div className={`App ${pokemons.types[0].type.name}`}>
+    <div className={`App ${myPokemon.tipo}`}>
       <h1>Cartinha do Pokémon</h1>
-      <div className='pokemon-container '> 
-        <div className={`pokemon-carta ${pokemons.types[0].type.name}`}>
-          <h3 className={`nome-pkm ${pokemons.types[0].type.name}`}>{pokemons.name}</h3>
-          <h2 className={`tipo-pokemon1 ${pokemons.types[0].type.name}`}>{pokemons.types[0].type.name}</h2>
-          <img className='sprite' src={shinies.includes(pokemons.name.toLowerCase())? pokemons.sprites.other['official-artwork'].front_shiny: pokemons.sprites.other['official-artwork'].front_default} alt={pokemons.name} />
-          <h3 className={`palavras ${pokemons.types[0].type.name}`}>
-            {pokemons.stats[0].stat.name}: {pokemons.stats[0].base_stat}
+      <div className='pokemon-container '>  
+        <div className={`pokemon-carta ${myPokemon.tipo}`}>
+          <h3 className={`nome-pkm ${myPokemon.tipo}`}>{myPokemon.nome}</h3>
+          <h2 className={`tipo-pokemon1 ${myPokemon.tipo}`}>{myPokemon.tipo}</h2>
+          <img className='sprite' src={shinies.includes(myPokemon.nome)? myPokemon.imagemShiny: myPokemon.imagem} alt={myPokemon.nome} />
+          <h3 className={`palavras ${myPokemon.tipo}`}>
+            Vida: {myPokemon.vida*10}
           </h3>
-          <h3 className={`palavras ${pokemons.types[0].type.name}`}>
-            {pokemons.stats[1].stat.name}: {pokemons.stats[1].base_stat}
+          <h3 className={`palavras ${myPokemon.tipo}`}>
+            ataque: {myPokemon.ataque}
           </h3>
           </div>
         </div>

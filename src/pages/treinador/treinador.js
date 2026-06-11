@@ -26,7 +26,7 @@ function Treinador(){
                        <Link to="/pokemon/magikarp"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/ponyta"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/tauros"><Botaolegal></Botaolegal></Link>
-                       <Link to="/placeholder"><Botaolegal></Botaolegal></Link>
+                       <Link to="/pokemon/pikachu"><Botaolegal></Botaolegal></Link>
                        <Link to="/placeholder"><Botaolegal></Botaolegal></Link> 
                        <Link to="/pokemonfight"><Botaodois/></Link>
                                                          
