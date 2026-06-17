@@ -37,71 +37,71 @@ body {
 } 
 
 
-/*Aba para customização de cartas de grama🍃*/
+/*Aba para customização de cartas de natureza🍃*/
 
-.pokemon-carta.grass{
+.pokemon-carta.natureza{
   background: radial-gradient(rgb(4, 151, 90) , rgb(39, 255, 115));
   box-shadow: 5px 5px 5px #063f01;
 }
 
 
-.tipo-pokemon1.grass{
+.tipo-pokemon1.natureza{
   color: #248600;
   text-shadow: 1px 1px 1px #000000;
 }
-.nome-pkm.grass{
+.nome-pkm.natureza{
   font-size: 30px;
   text-shadow: 1px 1px 1px #000000;
   color:rgb(0, 255, 0);
 }
 
-.palavras.grass{
+.palavras.natureza{
   text-shadow: 1px 1px 1px #000000;
   color:rgb(0, 179, 0);
 }
  
 
 /*Aba para customização de cartas de água 💧*/
-.pokemon-carta.water{
+.pokemon-carta.agua{
   background: radial-gradient(#00b0cf, rgb(55, 84, 110));
 
   box-shadow: 5px 5px 5px #013b3f;
 }
 
-  .tipo-pokemon1.water{
+  .tipo-pokemon1.agua{
   color: #55e5ff;
   text-shadow: 1px 1px 1px #000000;
 }
-.nome-pkm.water{
+.nome-pkm.agua{
 
   font-size: 30px;
   text-shadow: 1px 1px 1px #000000;
   color:rgb(123, 202, 255);
 }
 
-.palavras.water{
+.palavras.agua{
   text-shadow: 1px 1px 1px #000000;
   color:rgb(78, 190, 255);
 }
 
 /*Aba para customização de cartas de fogo 🔥*/
-  .pokemon-carta.fire{
+  .pokemon-carta.fogo{
   background: radial-gradient(#ffbe25, rgb(206, 141, 62));
   box-shadow: 5px 5px 5px #3f2b01;
 }
 
-  .tipo-pokemon1.fire{
+  .tipo-pokemon1.fogo{
   color: #ffb055;
   text-shadow: 1px 1px 1px #000000;
 }
-.nome-pkm.fire{
+.nome-pkm.fogo{
 
   font-size: 30px;
   text-shadow: 1px 1px 1px #000000;
   color:rgb(255, 110, 27);
 }
 
-.palavras.fire{
+.palavras.fogo{
   text-shadow: 1px 1px 1px #000000;
   color:rgb(214, 104, 30);
 
@@ -109,23 +109,71 @@ body {
 
 /*Aba para customização de cartas de normal 🥊*/
 
-.pokemon-carta.normal{
+.pokemon-carta.corpo{
   background: radial-gradient(#686868, rgb(54, 54, 54));
   box-shadow: 5px 5px 5px #1a1a1a;
 }
 
-  .tipo-pokemon1.normal{
+  .tipo-pokemon1.corpo{
   color: #c4c4c4;
   text-shadow: 1px 1px 1px #000000;
 }
-.nome-pkm.normal{
+.nome-pkm.corpo{
 
   font-size: 30px;
   text-shadow: 1px 1px 1px #000000;
   color:#e0e0e0;
 }
 
-.palavras.normal{
+.palavras.corpo{
   text-shadow: 1px 1px 1px #000000;
   color:#cfcfcf;
 }
+
+
+/*Aba para customização de cartas de tempestade ⚡  */
+
+.pokemon-carta.tempestade{
+  background: radial-gradient(#ffea2f, rgb(184, 171, 0));
+  box-shadow: 5px 5px 5px #1a1a1a;
+}
+
+  .tipo-pokemon1.tempestade{
+  color: #eff307;
+  text-shadow: 1px 1px 1px #000000;
+}
+.nome-pkm.tempestade{
+
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  color:#e6e200;
+}
+
+.palavras.tempestade{
+  text-shadow: 1px 1px 1px #000000;
+  color:#ffdc18;
+}
+
+  /*Aba para customização de cartas de terra 🪨  */
+
+.pokemon-carta.terra{
+  background: radial-gradient(#612d0b, rgb(212, 135, 35));
+  box-shadow: 5px 5px 5px #1a1a1a;
+}
+
+  .tipo-pokemon1.terra{
+  color: #a35e0f;
+  text-shadow: 1px 1px 1px #000000;
+}
+.nome-pkm.terra{
+
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000000;
+  color:#ce7602;
+}
+
+.palavras.terra{
+  text-shadow: 1px 1px 1px #000000;
+  color:#d37e0f;
+}
+

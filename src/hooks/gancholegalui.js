@@ -17,7 +17,7 @@ function Gancholegalui(poke) {
   useEffect(() => {
     const getMyType = async () => {
       try {
-      if(pokemons.types[0].type.name == 'fire' || pokemons.types[0].type.name == 'fighter'){
+      if(pokemons.types[0].type.name == 'normal' || pokemons.types[0].type.name == 'fighter'){
         setMyType  ('corpo');
       } else if(pokemons.types[0].type.name == 'psychic' || pokemons.types[0].type.name == 'fairy'){
       
@@ -108,7 +108,7 @@ useEffect(() => {
         nome:  pokemons.name,
         vida:  pokemons.stats[0].base_stat,
         ataque:  pokemons.stats[1].base_stat,
-        tipo:  pokemons.types[0].type.name,
+        tipo:  myType,
         evolucao:  [evolution.chain.evolves_to[0].species.name],
         imagem:  pokemons.sprites.other['official-artwork'].front_default,
         imagemShiny:  pokemons.sprites.other['official-artwork'].front_shiny,
@@ -118,7 +118,7 @@ useEffect(() => {
     }
   };  
   myPokemon();
-}, [evolution, pokemons]);
+}, [evolution, pokemons, myType]);
 
 
 
