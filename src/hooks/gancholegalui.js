@@ -121,7 +121,7 @@ useEffect(() => {
         tipo:  myType,
         imagem:  pokemons.sprites.other['official-artwork'].front_default,
         imagemShiny:  pokemons.sprites.other['official-artwork'].front_shiny,
-        evolucao:  [evolution.chain.evolves_to[0].species.name],
+        evolucao:  [evolution.chain.evolves_to[0]?.species.name],
       });
       console.log(myPokemon);
       setLoading(false);
