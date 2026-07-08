@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { getPokemonDB, savePokemonDB } from '../utils/pokemonDB';
 
 
 
@@ -65,9 +66,18 @@ function Gancholegalui(poke) {
         setError(true);
       }
     };
-    if(poke) getData();
- }, [poke]); 
- 
+    getData();
+    const getCache = async () => {
+    const cachep = await getPokemonDB(poke)
+    if(!cachep){
+      await getData()
+    } else {
+      setMypokemon(cachep)
+      return setLoading(false);
+    }
+    };
+}, [poke]); 
+
  
  //2  
  useEffect(() => { //useEffect busca o pokemon da api, usando o pokemon da url
@@ -109,11 +119,17 @@ useEffect(() => {
         vida:  pokemons.stats[0].base_stat,
         ataque:  pokemons.stats[1].base_stat,
         tipo:  myType,
-        evolucao:  [evolution.chain.evolves_to[0].species.name],
         imagem:  pokemons.sprites.other['official-artwork'].front_default,
         imagemShiny:  pokemons.sprites.other['official-artwork'].front_shiny,
+        evolucao:  [evolution.chain.evolves_to[0].species.name],
       });
-    } catch (err) {
+      console.log(myPokemon);
+      setLoading(false);
+      await savePokemonDB(myPokemon);
+    } 
+    
+    
+    catch (err) {
       console.log(err);
     }
   };  

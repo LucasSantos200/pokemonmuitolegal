@@ -22,7 +22,7 @@ function PokemonApp() {
   const {myPokemon, loading, error} = Gancholegalui(id); 
   
   if (loading) return <div className='loader'> <img src={placeholder2}/>Carregando Pokémon...</div>;
-  if (error || !myPokemon) return <div className='error'>Rolou um erro aqui, calma.</div>;
+  if (error || !myPokemon) return <div className='error'> <img src={placeholder1}/>Rolou um erro aqui, calma.</div>;
   const shinies = ['ponyta']; //nessa parte eu transformei só a ponyta em shiny
 
 
