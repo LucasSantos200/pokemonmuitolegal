@@ -53,13 +53,13 @@ function PokemonApp() {
 
           {myPokemon?.evolucao2 && (
             <Link to={`/pokemon/${myPokemon.evolucao2}`}>
-            <button className="irparaoutrocoiso2" title={myPokemon.evo2}/>
+            <button className="irparaoutrocoiso2" title={myPokemon.evolucao2}/>
             </Link>
           )}  
           
           {myPokemon?.evolucao3 && (
             <Link to={`/pokemon/${myPokemon.evolucao3}`}>
-              <button className="irparaoutrocoiso3" title={myPokemon.evo3}/>
+              <button className="irparaoutrocoiso3" title={myPokemon.evolucao3}/>
             </Link>
           )}
         </div>
