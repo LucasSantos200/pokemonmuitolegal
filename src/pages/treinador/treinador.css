@@ -36,21 +36,5 @@ body{
 }
 
 
-.irparaoutrocoiso{
 
-  width: 200px;
-  height: 70x;
-  background-size: cover ;
-  background-position: center;
-  background-color: transparent;
-  border: transparent;  
-  cursor: pointer;
-  background: linear-gradient( rgb(255, 0, 0) , rgb(0, 0, 0),  rgb(255, 255, 255) );
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px #000000;
-  color: #ffffff;
-}
-.irparaoutrocoiso:hover{
-    transition: transform 0.3s ease;
-  transform: translateY(-10px);
-}
+

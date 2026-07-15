@@ -15,7 +15,7 @@ function Gancholegalui(poke) {
   const [myType , setMyType]= useState('');
   
   
-  useEffect(() => {
+  useEffect(() => { //cria um myType e muda o tipo personalizado do pokémon dependendo do tipo atual
     const getMyType = async () => {
       try {
       if(pokemons.types[0].type.name == 'normal' || pokemons.types[0].type.name == 'fighter'){
@@ -53,10 +53,10 @@ function Gancholegalui(poke) {
 
 
   //estrutura Try-Catch, bota um erro automático 
-  useEffect(() => { //useEffect busca o pokemon da api, usando o pokemon da url
+  useEffect(() => { //aqui ele pega o "poke" e bota no lugar da API
     const getData = async () => {
       try {
-        const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${poke}`);
+        const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${poke}`); //aqui ele busca o pokemon da api, usando o pokemon da url 
         setPokemons(res.data);
         console.log("Sucesso:", res)
         setLoading(false);
@@ -80,7 +80,7 @@ function Gancholegalui(poke) {
 
  
  //2  
- useEffect(() => { //useEffect busca o pokemon da api, usando o pokemon da url
+ useEffect(() => { //toda vez que o "pokemons" muda, ele busca as especies na api 
     const getSpecie = async () => {
       try {
         const res = await axios.get(pokemons.species.url, {});
@@ -96,7 +96,7 @@ function Gancholegalui(poke) {
  
  
  //3
- useEffect(() => { //useEffect busca o pokemon da api, usando o pokemon da url
+ useEffect(() => { //toda vez que o "pokemons" muda, ele busca as evoluções na api
     const getEvolutions = async () => {
       try {
         const res = await axios.get(specie.evolution_chain.url, {});
@@ -111,7 +111,7 @@ function Gancholegalui(poke) {
 
 
 
-useEffect(() => {
+useEffect(() => { //esse busca todas as informações do pokémon e bota da um nome proprio
   const myPokemon = async () => {
     try {
       setMypokemon({

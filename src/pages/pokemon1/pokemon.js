@@ -5,7 +5,6 @@ import './pokemon1.css';
 import Gancholegalui from '../../hooks/gancholegalui';
 import { useParams } from "react-router-dom";
 import myPokeTipo from '../../hooks/gancholegalui';
-
 import placeholder1 from "../../assets/placeholder.png"
 import placeholder2 from "../../assets/trollface.jpg"
 //aqui eu to usando o .json e o "Gancholegalui" pra pegar as info 
@@ -43,6 +42,7 @@ function PokemonApp() {
             ataque: {myPokemon.ataque}
           </h3>
           </div>
+
         </div>
       </div>
   );

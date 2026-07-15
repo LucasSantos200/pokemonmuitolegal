@@ -6,7 +6,7 @@ import '../pages/treinador/treinador.css' //esse import é só pra por uma foto 
 
 //esse botão é só um componente simples que o professor pediu pra fazer
 function Botaodois(){
-    return <button className="irparaoutrocoiso">IR PARA A LUTA</button>
+    return <button></button>
 }
 
 export default Botaodois;

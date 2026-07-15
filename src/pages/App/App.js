@@ -18,7 +18,6 @@ function App() {
         <Route path="/pokemon/:id" element={<PokemonApp/>} /> 
         <Route path="/" element={<Treinador/>} />
         <Route path="/Placeholder" element={<Placeholder/>} />
-        <Route path="/PokemonFight" element={<Fight/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -199,3 +199,59 @@
   text-shadow: 1px 1px 1px #000000;
   color:#ab6aff;
   }
+
+
+  /*parte extra*/
+  .irparaoutrocoiso{
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: transparent;  
+  cursor: pointer;
+  background-image: url('../../assets/evolucao1.png');
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #000000;
+  color: #ffffff;
+}
+.irparaoutrocoiso:hover{
+    transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.irparaoutrocoiso2{
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: transparent;  
+  cursor: pointer;
+  background-image: url('../../assets/evolucao2.png');
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #000000;
+  color: #ffffff;
+}
+.irparaoutrocoiso2:hover{
+    transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.irparaoutrocoiso3{
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: transparent;  
+  cursor: pointer;
+  background-image: url('../../assets/evolucao3.png');
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #000000;
+  color: #ffffff;
+}
+.irparaoutrocoiso3:hover{
+    transition: transform 0.3s ease;
+  transform: translateY(-10px);
+}

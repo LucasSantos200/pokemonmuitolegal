@@ -12,6 +12,7 @@ import pfp from "../../assets/molierlindaaiaiaiaiaiamburgao.png"
 
 function Treinador(){
     return(
+    <div>
         <div className="Treinador">
               <h1>Treinador</h1>
               <h2> Avatar</h2>
@@ -28,9 +29,9 @@ function Treinador(){
                        <Link to="/pokemon/tauros"><Botaolegal></Botaolegal></Link>
                        <Link to="/pokemon/gengar"><Botaolegal></Botaolegal></Link>
                        <Link to="/placeholder"><Botaolegal></Botaolegal></Link> 
-                       <Link to="/pokemonfight"><Botaodois/></Link>
-                                                         
                 </div>
+
+     </div>                            
                 
     );
 }
