@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { getPokemonDB, savePokemonDB } from '../utils/pokemonDB';
 
-
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+} 
 
 //"poke" chama o pokemon do App e bota na pokeapi
 function Gancholegalui(poke) {
@@ -109,11 +111,14 @@ function Gancholegalui(poke) {
     getEvolutions();
  }, [specie]); 
 
-
+      
 
 useEffect(() => { //esse busca todas as informações do pokémon e bota da um nome proprio
-  const myPokemon = async () => {
+  const myPoke = async () => {
     try {
+      const evolucao1 = evolution?.chain?.species?.name || null;
+      const evolucao2 = evolution?.chain?.evolves_to?.[0]?.species?.name || null;
+      const evolucao3 = evolution?.chain?.evolves_to?.[0]?.evolves_to?.[0]?.species?.name || null;
       setMypokemon({
         nome:  pokemons.name,
         vida:  pokemons.stats[0].base_stat,
@@ -121,9 +126,11 @@ useEffect(() => { //esse busca todas as informações do pokémon e bota da um n
         tipo:  myType,
         imagem:  pokemons.sprites.other['official-artwork'].front_default,
         imagemShiny:  pokemons.sprites.other['official-artwork'].front_shiny,
-        evolucao:  [evolution.chain.evolves_to[0]?.species.name],
-      });
-      console.log(myPokemon);
+        evolucao1,
+        evolucao2,
+        evolucao3
+      }); await sleep(1000)
+      console.log("meupokemon", myPokemon);
       setLoading(false);
       await savePokemonDB(myPokemon);
     } 
@@ -133,15 +140,19 @@ useEffect(() => { //esse busca todas as informações do pokémon e bota da um n
       console.log(err);
     }
   };  
-  myPokemon();
+  myPoke();
 }, [evolution, pokemons, myType]);
 
 
 
 
-    return{myPokemon, loading, error}
+    return{
+      myPokemon: myPokemon || {}, 
+      loading, 
+      error
+    };
 
-};
+}
 
 
 export default Gancholegalui;

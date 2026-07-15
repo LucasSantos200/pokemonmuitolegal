@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom";
 import myPokeTipo from '../../hooks/gancholegalui';
 import placeholder1 from "../../assets/placeholder.png"
 import placeholder2 from "../../assets/trollface.jpg"
+import { Link } from 'react-router-dom';
+import Botaodois from '../../components/botaodois';
 //aqui eu to usando o .json e o "Gancholegalui" pra pegar as info 
 //dos pokemon e transformar em texto no HTML
 
@@ -42,7 +44,24 @@ function PokemonApp() {
             ataque: {myPokemon.ataque}
           </h3>
           </div>
+       
+        {myPokemon?.evolucao1 && (
+            <Link to={`/pokemon/${myPokemon.evolucao1}`}>
+              <button className="irparaoutrocoiso" title={myPokemon.evolucao1}/>
+            </Link>
+          )}  
 
+          {myPokemon?.evolucao2 && (
+            <Link to={`/pokemon/${myPokemon.evolucao2}`}>
+            <button className="irparaoutrocoiso2" title={myPokemon.evo2}/>
+            </Link>
+          )}  
+          
+          {myPokemon?.evolucao3 && (
+            <Link to={`/pokemon/${myPokemon.evolucao3}`}>
+              <button className="irparaoutrocoiso3" title={myPokemon.evo3}/>
+            </Link>
+          )}
         </div>
       </div>
   );
